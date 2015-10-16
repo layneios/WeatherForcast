@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LRWeatherHomeController.h
 //  WeatherForcast
 //
 //  Created by Lorin on 15/10/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LRWeatherHomeController : UIViewController
 
 @end
-
