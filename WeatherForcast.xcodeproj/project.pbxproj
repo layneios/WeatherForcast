@@ -22,7 +22,6 @@
 		5A88253C1BD0A2E8005B10F3 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8825331BD0A2E8005B10F3 /* UIRefreshControl+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		5A88253D1BD0A2E8005B10F3 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A8825351BD0A2E8005B10F3 /* UIWebView+AFNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		5AC90EEF1BC8AB6800CEA8EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC90EED1BC8AB6800CEA8EB /* Main.storyboard */; };
-		5AC90EF41BC8AB6800CEA8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AC90EF21BC8AB6800CEA8EB /* LaunchScreen.storyboard */; };
 		5AC90EFF1BC8AB6800CEA8EB /* WeatherForcastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC90EFE1BC8AB6800CEA8EB /* WeatherForcastTests.m */; };
 		5AC90F0A1BC8AB6800CEA8EB /* WeatherForcastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC90F091BC8AB6800CEA8EB /* WeatherForcastUITests.m */; };
 		5AC90F1D1BC8ABDC00CEA8EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AC90F1B1BC8ABDC00CEA8EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
@@ -94,7 +93,6 @@
 		5A8825351BD0A2E8005B10F3 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		5AC90EE11BC8AB6800CEA8EB /* WeatherForcast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherForcast.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC90EEE1BC8AB6800CEA8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5AC90EF31BC8AB6800CEA8EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AC90EF51BC8AB6800CEA8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AC90EFA1BC8AB6800CEA8EB /* WeatherForcastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherForcastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC90EFE1BC8AB6800CEA8EB /* WeatherForcastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherForcastTests.m; sourceTree = "<group>"; };
@@ -228,7 +226,6 @@
 			children = (
 				5AC90F171BC8ABDC00CEA8EB /* Classes */,
 				5AC90EED1BC8AB6800CEA8EB /* Main.storyboard */,
-				5AC90EF21BC8AB6800CEA8EB /* LaunchScreen.storyboard */,
 				5AC90EF51BC8AB6800CEA8EB /* Info.plist */,
 				5AC90EE41BC8AB6800CEA8EB /* Supporting Files */,
 			);
@@ -497,7 +494,6 @@
 			files = (
 				5AC90F2D1BC8B79200CEA8EB /* cloud@2x.jpg in Resources */,
 				5A2F29F91BCFBA4A00C0F41D /* sun@2x.jpg in Resources */,
-				5AC90EF41BC8AB6800CEA8EB /* LaunchScreen.storyboard in Resources */,
 				5AC90F211BC8ABE900CEA8EB /* Assets.xcassets in Resources */,
 				5AC90EEF1BC8AB6800CEA8EB /* Main.storyboard in Resources */,
 				5AC90F2B1BC8B78600CEA8EB /* rain@2x.jpg in Resources */,
@@ -598,14 +594,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5AC90EF21BC8AB6800CEA8EB /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AC90EF31BC8AB6800CEA8EB /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -693,7 +681,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WeatherForcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lighting-vista.WeatherForcast";
@@ -705,7 +693,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WeatherForcast/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lighting-vista.WeatherForcast";
