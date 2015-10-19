@@ -35,6 +35,9 @@
         // 输入框
         txtInputView = [[UITextField alloc] init];
         txtInputView.backgroundColor = [UIColor whiteColor];
+        // 设置键盘确认键
+        txtInputView.returnKeyType = UIReturnKeyDone;
+        txtInputView.delegate = self;
         [controlView addSubview: txtInputView];
         
         // 搜索按钮
@@ -58,6 +61,7 @@
     sureBtn.frame = CGRectMake(controlView.frame.size.width-15-80, 20+15, 80, 44);
 }
 
+///显示
 - (void)showInView:(UIView *)view
 {
     // 蒙版渐出
@@ -74,6 +78,7 @@
     [txtInputView becomeFirstResponder];
 }
 
+///隐藏
 - (void)closeView
 {
     [txtInputView resignFirstResponder];
@@ -81,11 +86,21 @@
     [self removeFromSuperview];
 }
 
+///确认键点击事件
 - (void)sureButtonAction
 {
     if(self.sureButtonBlock) {
         self.sureButtonBlock(self, txtInputView.text);
     }
+}
+
+#pragma mark - UITextField Delegate
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if(self.sureButtonBlock) {
+        self.sureButtonBlock(self, txtInputView.text);
+    }
+    return YES;
 }
 
 @end

@@ -11,7 +11,7 @@
 @class LRWeatherSearchView;
 typedef void (^SearchSureBlock)(LRWeatherSearchView *searchView, NSString *city);
 
-@interface LRWeatherSearchView : UIView
+@interface LRWeatherSearchView : UIView<UITextFieldDelegate>
 
 @property (nonatomic, strong) SearchSureBlock sureButtonBlock;
 
